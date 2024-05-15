@@ -1,0 +1,8 @@
+Binding: statistical_analysis_template
+Title: Statistical Analysis Template
+
+Parameter: use_renv
+Widget: CheckboxInput
+Label: Use renv
+Default: on
+Position: left

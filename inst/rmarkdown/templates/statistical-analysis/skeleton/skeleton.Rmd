@@ -1,0 +1,49 @@
+---
+title: "Statistical Analysis"
+author: "Your Name"
+date: "The Date"
+output: 
+  pdf_document:
+  keep_tex: true
+header-includes:
+    - \usepackage[default]{sourcesanspro}
+    - \usepackage[T1]{fontenc}
+mainfont: arial
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, # Do not include code in the output
+                      message = FALSE,
+                      warning = FALSE
+                      )
+```
+
+
+## Introduction
+
+This is a section where we would describe what we're doing and why.
+
+## Data Cleaning
+
+This is a section where we would write down if we have to clean the data in a specific way.  We might write
+
+* Why we excluded some patients
+* If we standardized the variables
+* What are the reference cases
+* etc.
+
+## Analysis 
+
+This is a section where we would describe what we do and why.  We can include code here too
+
+```{r}
+fit <- lm(mpg ~ am, data=mtcars)
+
+plot(fit, which=1)
+
+```
+
+
+## Conclusions
+
+What did we learn?
